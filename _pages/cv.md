@@ -1,64 +1,47 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
-redirect_from:
-  - /resume
 ---
 
-{% include base_path %}
+📄 **[Download the full CV as PDF](/files/cv.pdf)**
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+## Education
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+- **M.S., IT Engineering**, Sookmyung Women's University, Seoul — *expected Aug 2026*  
+  Intelligent Vision Processing Lab (IVPL), advised by Prof. Byung-Gyu Kim.  
+  GPA 4.15 / 4.30.  
+  Relevant coursework (all A+): Deep Generative Models, Optimization Methods, AI and Metaverse.
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+- **B.S., IT Engineering**, Sookmyung Women's University, Seoul — 2019–2024
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## Research Interests
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+- Efficient diffusion generative models (adaptive priors, few-step sampling).
+- Multimodal affective computing (vision + audio + text fusion, empathetic response generation).
+- Model compression and efficient attention.
+- Applications of vision AI to Physical AI / robotics.
+
+## Selected Publications
+
+See the [Publications](/publications/) page. Five first-author domestic papers, three Best Paper Awards; two international-venue manuscripts (Pattern Recognition, AAAI 2027) under review.
+
+## Selected Awards & Grants
+
+See the [Awards & Grants](/awards/) page. Four Best Paper Awards; Principal Investigator on two grants.
+
+## Skills
+
+- **Research** — diffusion models, generative modeling, multimodal fusion, model compression, empathetic AI.
+- **Programming** — Python, PyTorch, CUDA-aware profiling, distributed training.
+- **Infrastructure** — full-stack GPU cluster management (hardware / BIOS / OS / libraries).
+
+## Languages
+
+- Korean — native
+- English — Business proficient (OPIc IM2, Mar 2026)
+
+## Contact
+
+📧 [ah.lee@ivpl.sm.ac.kr](mailto:ah.lee@ivpl.sm.ac.kr) &nbsp;|&nbsp; 📱 +82 10-9109-6271 &nbsp;|&nbsp; 💻 [github.com/ahlee-smwu](https://github.com/ahlee-smwu)
