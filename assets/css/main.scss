@@ -37,21 +37,3 @@
     "layout/sidebar",
     "layout/json_cv"
 ;
-
----
-# Front matter comment to ensure Jekyll properly reads file.
----
-
-@charset "utf-8";
-
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
-
-/* Research 리스트 페이지의 excerpt 이미지 크기 통일 */
-.archive__item-excerpt img {
-  max-width: 250px;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0.5em 0;
-}
