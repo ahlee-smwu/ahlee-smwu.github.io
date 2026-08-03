@@ -32,6 +32,6 @@ A multimodal empathetic response generator that fuses the speaker's audio, visua
 
 ## Contact
 
-📧 [ah.lee@ivpl.sm.ac.kr](mailto:ah.lee@ivpl.sm.ac.kr)  [ahlee.sep@gmail.com](ahlee.sep@gmail.com) &nbsp;|&nbsp;  📱 +82 10-9109-6271  &nbsp;|&nbsp;  💻 [github.com/ahlee-smwu](https://github.com/ahlee-smwu)
+📧 [ah.lee@ivpl.sm.ac.kr](mailto:ah.lee@ivpl.sm.ac.kr) | [ahlee.sep@gmail.com](ahlee.sep@gmail.com) &nbsp;|&nbsp;  📱 +82 10-9109-6271  &nbsp;|&nbsp;  💻 [github.com/ahlee-smwu](https://github.com/ahlee-smwu)
 
 📄 [Download CV (PDF)](/files/cv.pdf) &nbsp; · &nbsp; 📊 [Download Full Portfolio (PDF)](/files/full_portfolio.pdf)
