@@ -43,9 +43,9 @@ Diffusion models must traverse the full trajectory from a *zero-information* Gau
 <p style="text-align: center;">
   <img src="/images/rapid_results2.png" alt="RAPID qualitative results on LSUN-Church Outdoor" style="max-width: 700px; width: 100%;">
 </p>
-<p style="text-align: center;">
+<!-- <p style="text-align: center;">
   <img src="/images/rapid_results3.png" alt="RAPID qualitative results on FFHQ" style="max-width: 700px; width: 100%;">
-</p>
+</p> -->
 
 ## Achievements
 
