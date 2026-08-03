@@ -22,7 +22,7 @@ Empathetic avatar systems were largely limited to simple "talking head" reaction
 The pipeline integrates ViCo (video), AnyGPT (audio), and wav2lip / ESRGAN for alignment and enhancement, generating a listener response that stays synchronized with the speaker while reflecting the intended emotional reaction (*happy / worry / furious*).
 
 <p style="text-align: center;">
-  <img src="/images/team2_teaser.png" alt="Method pipeline and results" style="max-width: 600px; width: 100%;">
+  <img src="/images/team2_teaser.png" alt="Method pipeline and results" style="max-width: 900px; width: 100%;">
 </p>
 
 ## Achievements
