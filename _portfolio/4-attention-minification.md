@@ -24,7 +24,7 @@ Each Q, K, V projection **W ∈ ℝ^(n×d)** is replaced by a product of two sma
 - Accuracy **+0.004–0.008** over the baseline — performance *slightly improved*, not merely preserved.
 
 <p style="text-align: center;">
-  <img src="/images/attn_teaser.png" alt="Low-rank factorization method and results" style="max-width: 500px; width: 100%;">
+  <img src="/images/attn_teaser.png" alt="Low-rank factorization method and results" style="max-width: 900px; width: 100%;">
 </p>
 
 ## Achievements
