@@ -40,8 +40,8 @@ See the [Awards & Grants](/awards/) page. Four Best Paper Awards; Principal Inve
 ## Languages
 
 - Korean — native
-- English — Business proficient (OPIc IM2, Mar 2026)
+- English — Business proficient (Mar 2026)
 
 ## Contact
 
-📧 [ah.lee@ivpl.sm.ac.kr](mailto:ah.lee@ivpl.sm.ac.kr) &nbsp;|&nbsp; 📱 +82 10-9109-6271 &nbsp;|&nbsp; 💻 [github.com/ahlee-smwu](https://github.com/ahlee-smwu)
+📧 [ah.lee@ivpl.sm.ac.kr](mailto:ah.lee@ivpl.sm.ac.kr) | [ahlee.sep@gmail.com](mailto:ahlee.sep@gmail.com) &nbsp;|&nbsp; 📱 +82 10-9109-6271 &nbsp;|&nbsp; 💻 [github.com/ahlee-smwu](https://github.com/ahlee-smwu)
