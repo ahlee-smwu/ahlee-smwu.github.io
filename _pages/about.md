@@ -19,8 +19,7 @@ I care most about **industrially deployable AI**: models that stay accurate whil
 
 ## Featured Research
 
-**RAPID: Robust Adaptive Prior Integration for Diffusion** — *Under review, Pattern Recognition*
-A data-adaptive GMM prior with a step-adaptive noise schedule that straightens the noise-to-data trajectory. **84% fewer sampling steps** and **6.3× faster generation** without any additional networks. [Project page](/portfolio/1-rapid/)
+**RAPID: Robust Adaptive Prior Integration for Diffusion** — > *Manuscript in preparation, to be submitted to Pattern Recognition (2026)* **84% fewer sampling steps** and **6.3× faster generation** without any additional networks. [Project page](/portfolio/1-rapid/)
 
 **CAUSE: Cross-modal Attention for Utterance-level Speaker–Listener Empathy** — *Submitted to AAAI 2027*
 A multimodal empathetic response generator that fuses the speaker's audio, visual, and textual cues via cross-attention. [Project page](/portfolio/2-cause/)
@@ -28,12 +27,11 @@ A multimodal empathetic response generator that fuses the speaker's audio, visua
 ## News
 
 - **Aug 2026** — Visiting Sydney, Melbourne, Brisbane (Aug 23 – Sep 1) to meet prospective PhD supervisors.
-- **Jun 2026** — REACT 2026 Challenge (ACM Multimedia) — 70K-sample multimodal empathy dataset built; diffusion-based reaction model in progress.
 - **May 2026** — *Adaptive Prior Diffusion* (RAPID predecessor) received the **Best Paper Award** at KMMS Spring Conference.
 - **Nov 2025** — *An Optimized Diffusion Model Based on Adaptive Prior Distribution* received the **Best Paper Award** at KMMS Autumn Conference.
 
 ## Contact
 
-📧 [ah.lee@ivpl.sm.ac.kr](mailto:ah.lee@ivpl.sm.ac.kr)  &nbsp;|&nbsp;  📱 +82 10-9109-6271  &nbsp;|&nbsp;  💻 [github.com/ahlee-smwu](https://github.com/ahlee-smwu)
+📧 [ah.lee@ivpl.sm.ac.kr](mailto:ah.lee@ivpl.sm.ac.kr)  [ahlee.sep@gmail.com](ahlee.sep@gmail.com) &nbsp;|&nbsp;  📱 +82 10-9109-6271  &nbsp;|&nbsp;  💻 [github.com/ahlee-smwu](https://github.com/ahlee-smwu)
 
 📄 [Download CV (PDF)](/files/cv.pdf) &nbsp; · &nbsp; 📊 [Download Full Portfolio (PDF)](/files/full_portfolio.pdf)
