@@ -1,5 +1,5 @@
 # Site Settings
-locale                   : "en-US"
+locale                   : "en-GB"
 title                    : "Ahhyeon Lee"
 title_separator          : "-"
 name                     : &name "Ahhyeon Lee"
@@ -20,7 +20,7 @@ author:
   email            : "ah.lee@ivpl.sm.ac.kr"
   researchgate     :
   github           : "ahlee-smwu"
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/ahhyeon-lee-5b8a50397/"
   orcid            :
 
 # Reading Files
