@@ -18,7 +18,7 @@ collection: portfolio
 Diffusion models must traverse the full trajectory from a *zero-information* Gaussian prior to the complex data distribution, which forces many sampling steps and wastes model capacity in the early stages. Existing few-step methods optimize the **trajectory** (velocity, ODE solvers, distillation) but leave the **inefficient prior** — the true root cause — untouched.
 
 <p style="text-align: center;">
-  <img src="/images/rapid_teaser.png" alt="RAPID vs Naive Diffusion" style="max-width: 800px; width: 100%;">
+  <img src="/images/rapid_teaser.png" alt="RAPID vs Naive Diffusion" style="max-width: 700px; width: 100%;">
 </p>
 
 ## Method
@@ -28,7 +28,7 @@ Diffusion models must traverse the full trajectory from a *zero-information* Gau
 **Step-Adaptive Noise.** An SNR-aware blending weight ω(t) mixes the GMM prior with the standard Gaussian noise. Early steps rely on the informative prior for global structure; late steps hand control back to the standard diffusion dynamics for fine-grained texture. This yields a geometrically straighter noise-to-data path and a lower-complexity velocity field.
 
 <p style="text-align: center;">
-  <img src="/images/rapid_architecture.png" alt="RAPID architecture" style="max-width: 550px; width: 100%;">
+  <img src="/images/rapid_architecture.png" alt="RAPID architecture" style="max-width: 600px; width: 100%;">
 </p>
 
 ## Experimental Results
@@ -38,7 +38,13 @@ Diffusion models must traverse the full trajectory from a *zero-information* Gau
 - Strong Precision preserved down to 20 NFE — surpassing SOTA LDM-8 at 200 NFE
 
 <p style="text-align: center;">
-  <img src="/images/rapid_results.png" alt="RAPID qualitative results" style="max-width: 900px; width: 100%;">
+  <img src="/images/rapid_results1.png" alt="RAPID qualitative results on ImageNet-1K" style="max-width: 700px; width: 100%;">
+</p>
+<p style="text-align: center;">
+  <img src="/images/rapid_results2.png" alt="RAPID qualitative results on LSUN-Church Outdoor" style="max-width: 700px; width: 100%;">
+</p>
+<p style="text-align: center;">
+  <img src="/images/rapid_results3.png" alt="RAPID qualitative results on FFHQ" style="max-width: 700px; width: 100%;">
 </p>
 
 ## Achievements
