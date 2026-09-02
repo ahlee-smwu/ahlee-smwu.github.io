@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am an **M.S. Candidate** at the [Intelligent Vision Processing Lab (IVPL)](http://ivpl.sm.ac.kr/), Sookmyung Women's University, advised by Prof. Byung-Gyu Kim. I will graduate in **August 2026** and am applying for **PhD positions starting in 2027**.
+I am an **M.S. Candidate** at the [Intelligent Vision Processing Lab (IVPL)](http://ivpl.sm.ac.kr/), Sookmyung Women's University, advised by Prof. Byung-Gyu Kim. I graduated in **August 2026** and am applying for **PhD positions starting in 2027**.
 
 My research sits at the intersection of two directions:
 
@@ -19,19 +19,19 @@ I care most about **industrially deployable AI**: models that stay accurate whil
 
 ## Featured Research
 
-**RAPID: Robust Adaptive Prior Integration for Diffusion** — > *Manuscript in preparation, to be submitted to Pattern Recognition (2026)* **84% fewer sampling steps** and **6.3× faster generation** without any additional networks. [Project page](/portfolio/1-rapid/)
+**RAPID: Robust Adaptive Prior Integration for Diffusion** — > *Pattern Recognition (2026) (under review)*
+**84% fewer sampling steps** and **6.3× faster generation** without any additional networks. [Project page](/portfolio/1-rapid/)
 
-**CAUSE: Cross-modal Attention for Utterance-level Speaker–Listener Empathy** — *Submitted to AAAI 2027*
+**CAUSE: Cross-modal Attention for Utterance-level Speaker–Listener Empathy** — *AAAI 2027 (under review)*
 A multimodal empathetic response generator that fuses the speaker's audio, visual, and textual cues via cross-attention. [Project page](/portfolio/2-cause/)
 
 ## News
 
-- **Aug 2026** — Visiting Sydney, Melbourne, Brisbane (Aug 23 – Sep 1) to meet prospective PhD supervisors.
 - **May 2026** — *Adaptive Prior Diffusion* (RAPID predecessor) received the **Best Paper Award** at KMMS Spring Conference.
 - **Nov 2025** — *An Optimized Diffusion Model Based on Adaptive Prior Distribution* received the **Best Paper Award** at KMMS Autumn Conference.
 
 ## Contact
 
-📧 [ah.lee@ivpl.sm.ac.kr](mailto:ah.lee@ivpl.sm.ac.kr) | [ahlee.sep@gmail.com](ahlee.sep@gmail.com) &nbsp;|&nbsp;  📱 +82 10-9109-6271  &nbsp;|&nbsp;  💻 [github.com/ahlee-smwu](https://github.com/ahlee-smwu)
+📧 [ah.lee@ivpl.sm.ac.kr](mailto:ah.lee@ivpl.sm.ac.kr) | [ahlee.sep@gmail.com](ahlee.sep@gmail.com) &nbsp;|&nbsp;  📱 [+82 10-9109-6271](+82 10-9109-6271)  &nbsp;|&nbsp;  💻 [github.com/ahlee-smwu](https://github.com/ahlee-smwu)
 
 📄 [Download CV (PDF)](/files/cv.pdf) &nbsp; · &nbsp; 📊 [Download Full Portfolio (PDF)](/files/full_portfolio.pdf)
