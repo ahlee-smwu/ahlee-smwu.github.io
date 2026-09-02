@@ -15,7 +15,7 @@ author_profile: true
 
 - <u>**A. H. Lee**</u>, Y. J. Cho, and B. G. Kim*.  
   **Multi-Signal-Based User Emotion Recognition and Cognitive Empathy Modeling** *(CAUSE line).*  
-  *AAAI 2027* (submitted). [Project page](/portfolio/2-cause/)
+  *AAAI 2027* (under review). [Project page](/portfolio/2-cause/)
 
 ## First Author — Conferences
 

@@ -39,7 +39,7 @@ See the [Awards & Grants](/awards/) page. Four Best Paper Awards; Principal Inve
 
 ## Languages
 
-- Korean — native
+- Korean — Native
 - English — Business proficient (Mar 2026)
 
 ## Contact

@@ -25,16 +25,16 @@ author_profile: true
 | Period | Project | Funding |
 |---|---|---|
 | 2025.04–2025.10 | Vision-based Emotion Recognition & Empathy Modeling | WISET (Korea Foundation for Women in Science, Engineering and Technology) |
-| 2024.09–2024.11 | Visual Signal Analysis and Empathy Modeling for User Emotion Recognition | Sookmyung SW-Centered University |
+| 2024.09–2024.11 | Visual Signal Analysis and Empathy Modeling for User Emotion Recognition | Institute of Information & communica
+tions Technology Planning & Evaluation (IITP) |
 
 **Participant**
 
 | Period | Project | Funding |
 |---|---|---|
 | 2026.03–2026.05 | Probabilistic Empathy Response Generation via Multimodal Fusion | NRF (National Research Foundation of Korea) |
-| 2024.03–2026.08 | Empathetic AI Women Engineering Education | NRF (BK21 Phase 4) |
-| 2024.03–2024.08 | Generative AI-based Empathetic Avatar Generation | Sookmyung SW-Centered University |
-| 2024.09–2024.12 | AV Coding & LF Media Technology for Tera-Media | IITP |
+| 2024.03–2026.08 | Empathetic AI Women Engineering Education | MOE (Ministry of Education), BK21 Phase 4 |
+| 2024.09–2024.12 | AV Coding & LF Media Technology for Tera-Media | IITP (Institute of Information & communications Technology Planning & Evaluation) |
 
 ## Skills & Infrastructure
 
