@@ -12,9 +12,10 @@ repository               : "ahlee-smwu/ahlee-smwu.github.io"
 author:
   name             : "Ahhyeon Lee"
   avatar           : "profile.png"     # place a photo at images/profile.jpg (optional; comment out if none)
-  bio              : "M.S. Candidate, IVPL, Sookmyung Women's University. Efficient diffusion & multimodal empathy."
+  bio              : "M.S. in IT Engineering, Sookmyung Women's University, Efficient diffusion & multimodal empathy."
   location         : "Seoul, Republic of Korea"
   employer         : "Intelligent Vision Processing Lab (IVPL)"
+  employer_url     : "http://ivpl.sm.ac.kr/"
   pubmed           :
   googlescholar    : # add if/when you have a profile
   email            : "ah.lee@ivpl.sm.ac.kr"

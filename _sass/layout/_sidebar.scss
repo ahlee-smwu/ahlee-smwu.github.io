@@ -194,6 +194,7 @@
 
 .sidebar .author__desktop {
   display: none;
+  overflow-wrap: anywhere;
   @media screen and (min-width: 1024px) {
     display: block;
   }

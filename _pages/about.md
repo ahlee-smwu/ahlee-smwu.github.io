@@ -8,7 +8,10 @@ redirect_from:
   - /about.html
 ---
 
-I am an **M.S. Candidate** at the [Intelligent Vision Processing Lab (IVPL)](http://ivpl.sm.ac.kr/), Sookmyung Women's University, advised by Prof. Byung-Gyu Kim. I graduated in **August 2026** and am applying for **PhD positions starting in 2027**.
+## About Me
+* 🎓 **M.S. in IT Engineering**, Sookmyung Women's University (Aug 2026)
+* 🔬 **Researcher** at Intelligent Vision Processing Lab ([IVPL](http://ivpl.sm.ac.kr/)), advised by Prof. Byung-Gyu Kim
+* 🎯 **Ph.D. Applicant** for 2027 positions
 
 My research sits at the intersection of two directions:
 
