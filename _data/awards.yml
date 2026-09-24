@@ -1,0 +1,35 @@
+# Awards, newest first.
+# role: first | second | thesis
+
+- title: "Best Paper Award"
+  event: "KMMS Spring Conference 2026"
+  date: "May 2026"
+  paper: "Adaptive Prior Diffusion: Dataset-Aware GMM Prior for High-Fidelity Image Generation"
+  role: first
+  link: /portfolio/1-rapid/
+
+- title: "Best Paper Award"
+  event: "KMMS Autumn Conference 2025"
+  date: "Nov 2025"
+  paper: "An Optimized Diffusion Model Based on Adaptive Prior Distribution"
+  role: first
+  link: /portfolio/1-rapid/
+
+- title: "Best Paper Award"
+  event: "KMMS Autumn Conference 2025"
+  date: "Nov 2025"
+  paper: "Temporal Gradient Consistency (TGC): Temporal Stability Assessment via Gradient Consistency for Video Stability"
+  role: second
+
+- title: "Best Paper Award"
+  event: "MITA 2025 (21st Int. Conf. on Multimedia Information Technology and Applications)"
+  date: "Jul 2025"
+  paper: "RMSF-ViT: Randomized Multi-Scale Fusion Vision Transformer"
+  role: second
+
+- title: "Best Paper Award"
+  event: "KMMS Spring Conference 2025"
+  date: "May 2025"
+  paper: "Attention Module Minification by Low-rank Factorization"
+  role: first
+  link: /portfolio/4-attention-minification/

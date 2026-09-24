@@ -1,0 +1,13 @@
+{% comment %}
+  Renders news from _data/news.yml.
+  Usage: {% include news-list.html %}  or  {% include news-list.html limit=5 %}
+{% endcomment %}
+{% assign n = include.limit | default: 100 %}
+<ul class="news">
+{% for item in site.data.news limit: n %}
+  <li class="news__item">
+    <span class="news__date">{{ item.date }}</span>
+    <div class="news__text">{{ item.text | markdownify }}</div>
+  </li>
+{% endfor %}
+</ul>

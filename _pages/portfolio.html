@@ -1,14 +1,26 @@
 ---
-layout: archive
-title: "Portfolio"
+layout: single
+title: "Research"
 permalink: /portfolio/
 author_profile: true
+excerpt: "Research projects of Ahhyeon Lee — RAPID few-step diffusion via adaptive prior, CAUSE multimodal empathetic response generation, multimodal emotion recognition, and Transformer attention minification."
 ---
 
-{% include base_path %}
+<p class="lead">Two lines of work — <strong>efficient diffusion generative models</strong> and <strong>multimodal empathy</strong>. Four projects, newest first.</p>
 
+<ul class="chips">
+  <li><span class="chip"># Efficient Vision Generative Model</span></li>
+  <li><span class="chip"># Multimodal Empathy Model</span></li>
+  <li><span class="chip"># Efficient AI</span></li>
+</ul>
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
+{% assign projects = site.portfolio | sort: "number" %}
+<ul class="cards">
+{% for p in projects %}{% include project-card.html project=p %}{% endfor %}
+</ul>
 
+<div class="btn-row btn-row--left">
+  <a class="btn-pill" href="/files/full_portfolio.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i> Portfolio (PDF)</a>
+  <a class="btn-pill" href="/files/research_achievement.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i> Research Achievements (PDF)</a>
+  <a class="btn-pill" href="/publications/"><i class="fas fa-book" aria-hidden="true"></i> Publications</a>
+</div>

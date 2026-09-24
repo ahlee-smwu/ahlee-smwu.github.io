@@ -1,0 +1,17 @@
+{% comment %}
+  Renders awards from _data/awards.yml.
+  Usage: {% include award-list.html %}
+{% endcomment %}
+<ul class="awards">
+{% for a in site.data.awards %}
+  <li class="award">
+    <span class="award__icon"><i class="fas fa-trophy" aria-hidden="true"></i></span>
+    <p class="award__title">{{ a.title }} · {{ a.event }}</p>
+    <p class="award__paper">{% if a.link %}<a href="{{ a.link | relative_url }}">{{ a.paper }}</a>{% else %}{{ a.paper }}{% endif %}</p>
+    <p class="award__meta">
+      <span>{{ a.date }}</span>
+      {% if a.role == "first" %}<span class="badge badge--first">First author</span>{% elsif a.role == "second" %}<span class="badge">Second author</span>{% endif %}
+    </p>
+  </li>
+{% endfor %}
+</ul>

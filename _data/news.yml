@@ -1,0 +1,28 @@
+# News, newest first. `text` is Markdown.
+
+- date: "Aug 2026"
+  text: "Received **M.S. in IT Engineering** (Sookmyung Women's University). Thesis **nominated for the Outstanding Thesis Award**."
+
+- date: "2026"
+  text: "**RAPID** submitted to *Pattern Recognition* and **CAUSE** submitted to *AAAI 2027* — both under review."
+
+- date: "May 2026"
+  text: "**Best Paper Award**, KMMS Spring 2026 — *Adaptive Prior Diffusion* (first author)."
+
+- date: "Mar 2026"
+  text: "Joined the NRF project *Probabilistic Empathy Response Generation via Multimodal Fusion*."
+
+- date: "Nov 2025"
+  text: "**Two Best Paper Awards**, KMMS Autumn 2025 — *Adaptive Prior Distribution* (first author) and *TGC* (second author)."
+
+- date: "Jul 2025"
+  text: "**Best Paper Award**, MITA 2025 — *RMSF-ViT* (second author)."
+
+- date: "May 2025"
+  text: "**Best Paper Award**, KMMS Spring 2025 — *Attention Module Minification by Low-rank Factorization* (first author)."
+
+- date: "Apr 2025"
+  text: "**Principal Investigator**, WISET team research grant — *Vision-based Emotion Recognition & Empathy Modeling*."
+
+- date: "Sep 2024"
+  text: "Started M.S. at IVPL. **Principal Investigator**, IITP / Sookmyung SW-Centered University project."

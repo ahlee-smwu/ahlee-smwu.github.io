@@ -1,0 +1,21 @@
+{% comment %}
+  Renders funded projects from _data/grants.yml.
+  Usage: {% include grant-list.html %}  or  {% include grant-list.html only="pi" %}
+{% endcomment %}
+{% if include.only %}
+  {% assign grants = site.data.grants | where: "role_kind", include.only %}
+{% else %}
+  {% assign grants = site.data.grants %}
+{% endif %}
+<ul class="grants">
+{% for g in grants %}
+  <li class="grant grant--{{ g.role_kind }}">
+    <div class="grant__top">
+      <span><i class="far fa-calendar" aria-hidden="true"></i> {{ g.period }}</span>
+      {% if g.role_kind == "pi" %}<span class="badge badge--pi">{{ g.role }}</span>{% else %}<span class="badge">{{ g.role }}</span>{% endif %}
+    </div>
+    <p class="grant__title">{{ g.title }}</p>
+    <p class="grant__funder">{{ g.funder }}</p>
+  </li>
+{% endfor %}
+</ul>

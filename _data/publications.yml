@@ -1,0 +1,109 @@
+# Publications, newest first within each group.
+# group: review | first | second-intl | second-domestic
+# role:  first | second
+# award: text shown in the award badge (omit if none)
+# status: text shown in the status badge (omit if published)
+
+- group: review
+  role: first
+  title: "RAPID: Robust Adaptive Prior Integration for Diffusion"
+  authors: "A. H. Lee, B. G. Kim*"
+  venue: "<em>Pattern Recognition</em>"
+  date: "2026"
+  status: "Under review"
+  links:
+    - label: "Project page"
+      url: /portfolio/1-rapid/
+    - label: "Slides"
+      url: /files/rapid_slides.pdf
+
+- group: review
+  role: first
+  title: "CAUSE: Sequential Empathetic Listener Reaction Generation from Response Speech"
+  authors: "A. H. Lee, Y. J. Cho, B. G. Kim*"
+  venue: "<em>AAAI 2027</em>"
+  date: "2026"
+  status: "Under review"
+  links:
+    - label: "Project page"
+      url: /portfolio/2-cause/
+
+- group: first
+  role: first
+  title: "Adaptive Prior Diffusion: Dataset-Aware GMM Prior for High-Fidelity Image Generation"
+  authors: "A. H. Lee, H. S. Lee, B. G. Kim*"
+  venue: "KMMS Spring Conference"
+  date: "May 2026"
+  award: "Best Paper Award"
+  links:
+    - label: "Project page"
+      url: /portfolio/1-rapid/
+
+- group: first
+  role: first
+  title: "An Optimized Diffusion Model Based on Adaptive Prior Distribution"
+  authors: "A. H. Lee, Y. J. Cho, B. G. Kim*"
+  venue: "KMMS Autumn Conference"
+  date: "Nov 2025"
+  award: "Best Paper Award"
+  links:
+    - label: "Project page"
+      url: /portfolio/1-rapid/
+
+- group: first
+  role: first
+  title: "Attention Module Minification by Low-rank Factorization"
+  authors: "A. H. Lee, B. G. Kim*"
+  venue: "KMMS Spring Conference"
+  date: "May 2025"
+  award: "Best Paper Award"
+  links:
+    - label: "Project page"
+      url: /portfolio/4-attention-minification/
+
+- group: first
+  role: first
+  title: "Development of Global Virtual Conferencing (GVC) Service Based on Real-time Translation Technique"
+  authors: "A. H. Lee, S. Y. Lee, T. K. Park, B. G. Kim*"
+  venue: "KMMS Spring Conference"
+  date: "May 2025"
+
+- group: first
+  role: first
+  title: "Facial Emotion Recognition-Based Empathic Avatar Generation Technology"
+  authors: "A. H. Lee, Q. U. A. Aisha, Y. J. Cho, N. R. Choi, S. I. Choi, B. G. Kim*"
+  venue: "KMMS Autumn Conference"
+  date: "Nov 2024"
+  links:
+    - label: "Project page"
+      url: /portfolio/3-team-research-ii/
+
+- group: second-intl
+  role: second
+  title: "RMSF-ViT: Randomized Multi-Scale Fusion Vision Transformer"
+  authors: "Y. J. Cho, A. H. Lee, B. G. Kim*, J. Platos"
+  venue: "MITA 2025 · <em>Communications in Computer and Information Science</em> (Springer)"
+  date: "Jul 2025"
+  award: "Best Paper Award"
+
+- group: second-intl
+  role: second
+  title: "Emotion Recognition Technique: A Comprehensive Review"
+  authors: "Q. U. A. Aisha, A. H. Lee, B. G. Kim, J. Kang"
+  venue: "<em>The Journal of Sciences and Innovation for Sustainable Peace</em>, vol. 3, no. 1, pp. 35–46"
+  date: "2025"
+
+- group: second-domestic
+  role: second
+  title: "Temporal Gradient Consistency (TGC): Temporal Stability Assessment via Gradient Consistency for Video Stability"
+  authors: "Q. U. A. Aisha, A. H. Lee, B. G. Kim*"
+  venue: "KMMS Autumn Conference"
+  date: "Nov 2025"
+  award: "Best Paper Award"
+
+- group: second-domestic
+  role: second
+  title: "Frequency Separated Feature Conditioning for Diffusion-Based Video Super-Resolution"
+  authors: "Y. J. Cho, A. H. Lee, B. G. Kim*"
+  venue: "KMMS Autumn Conference"
+  date: "Nov 2025"

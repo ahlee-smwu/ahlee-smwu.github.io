@@ -3,41 +3,33 @@ layout: single
 title: "Awards & Grants"
 permalink: /awards/
 author_profile: true
+excerpt: "Awards and funded research projects of Ahhyeon Lee — five Best Paper Awards, Outstanding Thesis Award nomination, and six funded projects including two as Principal Investigator."
 ---
 
-## Awards
+<ul class="stats">
+  <li class="stat"><span class="stat__num">5</span><span class="stat__label">Best Paper<br>Awards</span></li>
+  <li class="stat"><span class="stat__num">3</span><span class="stat__label">as first<br>author</span></li>
+  <li class="stat"><span class="stat__num">2</span><span class="stat__label">grants as<br>Principal Investigator</span></li>
+  <li class="stat"><span class="stat__num">6</span><span class="stat__label">funded research<br>projects</span></li>
+</ul>
 
-- 🏆 **Best Paper Award**, KMMS Spring 2026 — *Adaptive Prior Diffusion: Dataset-Aware GMM Prior for High-Fidelity Image Generation* (first author).
-- 🏆 **Best Paper Award**, KMMS Autumn 2025 — *An Optimized Diffusion Model Based on Adaptive Prior Distribution* (first author).
-- 🏆 **Best Paper Award**, KMMS Spring 2025 — *Attention Module Minification by Low-Rank Factorization* (first author).
-- 🏆 **Best Paper Award**, MITA 2025 — *RMSF-ViT: Randomized Multi-Scale Fusion Vision Transformer* (co-author).
+## Best Paper Awards
 
-<p style="text-align: center;">
-  <img src="/images/award.png" alt="Best Paper Award certificates" style="max-width: 800px; width: 100%; border: 1px solid #ddd; padding: 4px;">
-  <br/>
-  <em style="font-size: 0.9em; color: #666;">Best Paper Award, KMMS Spring 2026</em>
-</p>
+{% include award-list.html %}
 
-## Research Grants
+## Thesis
 
-**Principal Investigator**
+<ul class="keys">
+  <li><span class="badge badge--first">Nominee</span> <strong>Outstanding Thesis Award</strong> — M.S. thesis <em>RAPID: Robust Adaptive Prior Integration for Diffusion</em>, Sookmyung Women's University, 2026.</li>
+</ul>
 
-| Period | Project | Funding |
-|---|---|---|
-| 2025.04–2025.10 | Vision-based Emotion Recognition & Empathy Modeling | WISET (Korea Foundation for Women in Science, Engineering and Technology) |
-| 2024.09–2024.11 | Visual Signal Analysis and Empathy Modeling for User Emotion Recognition | Institute of Information & communica
-tions Technology Planning & Evaluation (IITP) |
+<figure class="fig">
+  <img src="/images/awards.jpg" alt="Four Best Paper Award certificates" loading="lazy">
+  <figcaption>Best Paper Award certificates — KMMS Spring 2026 · KMMS Spring 2025 · KMMS Autumn 2025 · MITA 2025.</figcaption>
+</figure>
 
-**Participant**
+## Funded Research Projects
 
-| Period | Project | Funding |
-|---|---|---|
-| 2026.03–2026.05 | Probabilistic Empathy Response Generation via Multimodal Fusion | NRF (National Research Foundation of Korea) |
-| 2024.03–2026.08 | Empathetic AI Women Engineering Education | MOE (Ministry of Education), BK21 Phase 4 |
-| 2024.09–2024.12 | AV Coding & LF Media Technology for Tera-Media | IITP (Institute of Information & communications Technology Planning & Evaluation) |
+<p class="muted">Principal Investigator projects first, then participating projects.</p>
 
-## Skills & Infrastructure
-
-**Lab GPU server team lead** — full-stack management (hardware → BIOS → OS → CUDA/library) of the IVPL GPU cluster; diagnosed and resolved I/O bottlenecks between GPU/CPU/disk, optimized inter-node communication, and managed thermal/power constraints for sustained large-scale training.
-
-**Languages & frameworks** — Python, PyTorch, CUDA-aware profiling, distributed training, Git.
+{% include grant-list.html %}
