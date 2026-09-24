@@ -12,7 +12,7 @@ redirect_from:
 <div class="hero">
   <img class="hero__photo" src="/images/profile.png" alt="Portrait of Ahhyeon Lee">
   <div class="hero__body">
-    <p class="hero__kicker">이아현 · Ah-Hyeon Lee</p>
+    <p class="hero__kicker">이아현 · publishes as Ah-Hyeon Lee (A. H. Lee)</p>
     <h1 class="hero__name">Ahhyeon Lee</h1>
     <p class="hero__role">M.S. in IT Engineering · Sookmyung Women's University · <a href="http://ivpl.sm.ac.kr/">IVPL</a></p>
     <ul class="hashtags">
@@ -49,12 +49,12 @@ redirect_from:
   <li class="stat"><span class="stat__num">2</span><span class="stat__label">grants as<br>Principal Investigator</span></li>
 </ul>
 
-## Research
+## Research Interests
 
 <ul class="keys">
   <li><strong>Efficient diffusion</strong> — data- &amp; step-adaptive priors → few-step sampling. No extra networks, no distillation.</li>
   <li><strong>Multimodal empathy</strong> — vision + audio + text cross-attention → listener responses grounded in the speaker's emotion.</li>
-  <li><strong>Deployable AI</strong> — keep accuracy, cut compute; connect vision intelligence to the physical world.</li>
+  <li><strong>Deployable AI</strong> — keep accuracy, cut compute: few-step diffusion · low-rank attention · GPU training infrastructure.</li>
 </ul>
 
 <ul class="chips">
@@ -77,7 +77,14 @@ redirect_from:
 
 <div class="btn-row btn-row--left">
   <a class="btn-pill" href="/portfolio/"><i class="fas fa-flask" aria-hidden="true"></i> All research projects</a>
-  <a class="btn-pill" href="/publications/"><i class="fas fa-book" aria-hidden="true"></i> Publications</a>
+</div>
+
+## Selected Publications
+
+{% include pub-list.html selected=true %}
+
+<div class="btn-row btn-row--left">
+  <a class="btn-pill" href="/publications/"><i class="fas fa-book" aria-hidden="true"></i> All publications</a>
 </div>
 
 ## News

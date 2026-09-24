@@ -10,7 +10,7 @@ excerpt: "Publications of Ahhyeon Lee — two international manuscripts under re
   <span class="badge badge--first">First author</span>
   <span class="badge badge--award"><i class="fas fa-trophy" aria-hidden="true"></i> Best Paper Award</span>
   <span class="badge badge--review">Under review</span>
-  <span><span class="me">A. H. Lee</span> = me &nbsp;·&nbsp; * corresponding author</span>
+  <span><span class="me">A. H. Lee</span> = Ahhyeon Lee &nbsp;·&nbsp; * corresponding author</span>
 </div>
 
 <ul class="stats">
@@ -36,4 +36,4 @@ excerpt: "Publications of Ahhyeon Lee — two international manuscripts under re
 
 {% include pub-list.html group="second-domestic" %}
 
-<p class="muted">KMMS = Korea Multimedia Society. Full manuscripts of papers under review are available upon request.</p>
+<p class="muted">KMMS = Korea Multimedia Society (domestic) · MITA = International Conference on Multimedia Information Technology and Applications. Full manuscripts of papers under review are available upon request.</p>

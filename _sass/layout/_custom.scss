@@ -22,11 +22,13 @@
   --ah-neutral-fg      : #3b4348;
   --ah-shadow          : 0 1px 2px rgba(0, 0, 0, 0.05), 0 4px 14px rgba(0, 0, 0, 0.05);
   --ah-shadow-hover    : 0 8px 24px rgba(0, 0, 0, 0.10);
+  --ah-border          : #dfe3e6;
+  --ah-accent-fg       : #236a7c;
 }
 
 html[data-theme="dark"] {
   --ah-accent          : #55c3de;
-  --ah-accent-soft     : rgba(85, 195, 222, 0.18);
+  --ah-accent-soft     : rgba(85, 195, 222, 0.12);
   --ah-surface         : #3d3d3d;
   --ah-surface-2       : #414141;
   --ah-muted           : #c6cbcf;
@@ -42,6 +44,8 @@ html[data-theme="dark"] {
   --ah-neutral-fg      : #eef1f3;
   --ah-shadow          : 0 1px 2px rgba(0, 0, 0, 0.4);
   --ah-shadow-hover    : 0 8px 24px rgba(0, 0, 0, 0.45);
+  --ah-border          : #5c6165;
+  --ah-accent-fg       : #a6e4f2;
 }
 
 /* --------------------------------------------------------------------------
@@ -119,6 +123,27 @@ body {
   }
 }
 
+/* content pages: reclaim most of the right-hand gutter the theme reserves for a TOC */
+.page:not(.page--home) {
+  @include breakpoint($large) {
+    padding-right: 7%;
+  }
+}
+
+/* sidebar: keep the employer line on one row next to its icon */
+.sidebar .author__urls li.author__desktop {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35em;
+  white-space: normal;
+
+  a {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 /* keep the sidebar bio short and readable on phones */
 .sidebar .author__bio {
   font-size: $type-size-6;
@@ -134,7 +159,7 @@ body {
   .eyebrow {
     display: block;
     margin: 0 0 0.25rem;
-    font-size: 0.74em;
+    font-size: max(0.74em, 12px);
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -158,7 +183,7 @@ body {
     gap: 1rem;
     padding: 0.25rem 0 1.5rem;
     margin-bottom: 1.25rem;
-    border-bottom: 1px solid var(--global-border-color);
+    border-bottom: 1px solid var(--ah-border);
     text-align: center;
 
     @include breakpoint($medium) {
@@ -225,7 +250,7 @@ body {
       margin: 0;
       font-weight: 700;
       font-size: 0.95em;
-      color: var(--ah-accent);
+      color: var(--global-text-color);
     }
   }
 
@@ -251,7 +276,7 @@ body {
     align-items: center;
     gap: 0.45rem;
     padding: 0.5rem 0.95rem;
-    border: 1px solid var(--global-border-color);
+    border: 1px solid var(--ah-border);
     border-radius: 999px;
     background: var(--ah-surface);
     color: var(--global-text-color);
@@ -292,7 +317,7 @@ body {
   .btn-mini {
     display: inline-block;
     padding: 0.18rem 0.6rem;
-    border: 1px solid var(--global-border-color);
+    border: 1px solid var(--ah-border);
     border-radius: 999px;
     font-size: 0.8em;
     font-weight: 600;
@@ -325,7 +350,7 @@ body {
   .stat {
     margin: 0;
     padding: 0.9rem 0.6rem;
-    border: 1px solid var(--global-border-color);
+    border: 1px solid var(--ah-border);
     border-radius: 12px;
     background: var(--ah-surface);
     text-align: center;
@@ -372,7 +397,7 @@ body {
     padding: 0.28rem 0.72rem;
     border-radius: 999px;
     background: var(--ah-accent-soft);
-    color: var(--ah-accent);
+    color: var(--ah-accent-fg);
     font-size: 0.86em;
     font-weight: 600;
     line-height: 1.3;
@@ -407,7 +432,7 @@ body {
     border-radius: 6px;
     background: var(--ah-neutral-bg);
     color: var(--ah-neutral-fg);
-    font-size: 0.72em;
+    font-size: max(0.72em, 12px);
     font-weight: 700;
     letter-spacing: 0.03em;
     line-height: 1.45;
@@ -446,7 +471,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    border: 1px solid var(--global-border-color);
+    border: 1px solid var(--ah-border);
     border-radius: 14px;
     background: var(--ah-surface-2);
     box-shadow: var(--ah-shadow);
@@ -471,7 +496,7 @@ body {
     object-fit: contain;
     padding: 0.5rem;
     background: #fff;
-    border-bottom: 1px solid var(--global-border-color);
+    border-bottom: 1px solid var(--ah-border);
     box-sizing: border-box;
   }
 
@@ -484,7 +509,10 @@ body {
   }
 
   .card__meta {
-    font-size: 0.74em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    font-size: max(0.74em, 12px);
     font-weight: 700;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -567,7 +595,7 @@ body {
     align-items: baseline;
     margin: 0;
     padding: 0.5rem 0;
-    border-bottom: 1px dashed var(--global-border-color);
+    border-bottom: 1px dashed var(--ah-border);
 
     &:last-child {
       border-bottom: 0;
@@ -577,7 +605,7 @@ body {
   .news__date {
     font-size: 0.85em;
     font-weight: 700;
-    color: var(--ah-accent);
+    color: var(--ah-accent-fg);
     white-space: nowrap;
   }
 
@@ -610,7 +638,7 @@ body {
   .pub {
     margin: 0 0 0.85rem;
     padding: 0.8rem 0.95rem;
-    border: 1px solid var(--global-border-color);
+    border: 1px solid var(--ah-border);
     border-radius: 12px;
     background: var(--ah-surface-2);
 
@@ -666,7 +694,7 @@ body {
     align-items: start;
     margin: 0 0 0.7rem;
     padding: 0.75rem 0.9rem;
-    border: 1px solid var(--global-border-color);
+    border: 1px solid var(--ah-border);
     border-radius: 12px;
     background: var(--ah-surface-2);
   }
@@ -710,7 +738,7 @@ body {
   .grant {
     margin: 0 0 0.7rem;
     padding: 0.7rem 0.9rem;
-    border-left: 4px solid var(--global-border-color);
+    border-left: 4px solid var(--ah-border);
     border-radius: 0 10px 10px 0;
     background: var(--ah-surface);
 
@@ -745,14 +773,15 @@ body {
   .entry {
     margin: 0 0 1rem;
     padding-bottom: 0.9rem;
-    border-bottom: 1px dashed var(--global-border-color);
+    border-bottom: 1px dashed var(--ah-border);
 
     &:last-child {
       border-bottom: 0;
     }
 
     ul {
-      margin: 0.3rem 0 0 1.1rem;
+      margin: 0.3rem 0 0;
+      padding-left: 1.15rem;
 
       li {
         margin-bottom: 0.25rem;
@@ -834,13 +863,13 @@ body {
   .panel {
     margin: 0;
     padding: 0.8rem 1rem;
-    border: 1px solid var(--global-border-color);
+    border: 1px solid var(--ah-border);
     border-radius: 12px;
     background: var(--ah-surface-2);
 
     .panel__title {
       margin: 0 0 0.4rem;
-      font-size: 0.76em;
+      font-size: max(0.76em, 12px);
       font-weight: 700;
       letter-spacing: 0.06em;
       text-transform: uppercase;
@@ -898,7 +927,7 @@ body {
       margin: 0 auto;
       padding: 0.35rem;
       background: #fff;
-      border: 1px solid var(--global-border-color);
+      border: 1px solid var(--ah-border);
       border-radius: 10px;
       box-sizing: border-box;
     }
@@ -945,6 +974,38 @@ body {
         flex: 0 0 1.2em;
         color: var(--ah-accent);
         text-align: center;
+      }
+    }
+  }
+  /* ---------- Helpers ---------- */
+  .nowrap {
+    white-space: nowrap;
+  }
+
+  /* panoramic figures: keep them legible on phones by letting them scroll sideways */
+  @media (max-width: 600px) {
+    .fig--wide {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+
+      img {
+        width: auto;
+        max-width: none;
+        height: 220px;
+      }
+
+      figcaption::after {
+        content: " (swipe sideways to see the whole figure)";
+      }
+    }
+
+    .chip-group {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.3rem;
+
+      .chip-group__label {
+        min-width: 0;
       }
     }
   }

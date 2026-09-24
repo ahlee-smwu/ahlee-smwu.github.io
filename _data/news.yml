@@ -1,10 +1,10 @@
 # News, newest first. `text` is Markdown.
 
+- date: "Now"
+  text: "**RAPID** (*Pattern Recognition*) and **CAUSE** (*AAAI 2027*) are under review."
+
 - date: "Aug 2026"
   text: "Received **M.S. in IT Engineering** (Sookmyung Women's University). Thesis **nominated for the Outstanding Thesis Award**."
-
-- date: "2026"
-  text: "**RAPID** submitted to *Pattern Recognition* and **CAUSE** submitted to *AAAI 2027* — both under review."
 
 - date: "May 2026"
   text: "**Best Paper Award**, KMMS Spring 2026 — *Adaptive Prior Diffusion* (first author)."

@@ -6,8 +6,7 @@
   <div class="proj__meta">
     <span class="proj__num">{{ page.number }}</span>
     <span>{{ page.category }}</span>
-    <span aria-hidden="true">·</span>
-    <span><i class="far fa-calendar" aria-hidden="true"></i> {{ page.period }}</span>
+    <span class="nowrap"><i class="far fa-calendar" aria-hidden="true"></i> {{ page.period }}</span>
   </div>
   {% if page.topic %}<p class="proj__topic"><strong>Topic</strong> · {{ page.topic }}</p>{% endif %}
   {% if page.badges %}
@@ -17,7 +16,7 @@
   {% endif %}
   {% if page.summary %}<p class="proj__summary">{{ page.summary }}</p>{% endif %}
   {% if page.teaser %}
-  <figure class="fig fig--narrow">
+  <figure class="fig fig--narrow{% if page.teaser_wide %} fig--wide{% endif %}">
     <img src="{{ page.teaser | relative_url }}" alt="{{ page.teaser_alt | default: page.title }}">
     {% if page.teaser_caption %}<figcaption>{{ page.teaser_caption }}</figcaption>{% endif %}
   </figure>

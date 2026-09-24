@@ -7,6 +7,7 @@
 - group: review
   role: first
   title: "RAPID: Robust Adaptive Prior Integration for Diffusion"
+  selected: true
   authors: "A. H. Lee, B. G. Kim*"
   venue: "<em>Pattern Recognition</em>"
   date: "2026"
@@ -20,6 +21,7 @@
 - group: review
   role: first
   title: "CAUSE: Sequential Empathetic Listener Reaction Generation from Response Speech"
+  selected: true
   authors: "A. H. Lee, Y. J. Cho, B. G. Kim*"
   venue: "<em>AAAI 2027</em>"
   date: "2026"
@@ -31,6 +33,7 @@
 - group: first
   role: first
   title: "Adaptive Prior Diffusion: Dataset-Aware GMM Prior for High-Fidelity Image Generation"
+  selected: true
   authors: "A. H. Lee, H. S. Lee, B. G. Kim*"
   venue: "KMMS Spring Conference"
   date: "May 2026"
@@ -81,6 +84,7 @@
 - group: second-intl
   role: second
   title: "RMSF-ViT: Randomized Multi-Scale Fusion Vision Transformer"
+  selected: true
   authors: "Y. J. Cho, A. H. Lee, B. G. Kim*, J. Platos"
   venue: "MITA 2025 · <em>Communications in Computer and Information Science</em> (Springer)"
   date: "Jul 2025"

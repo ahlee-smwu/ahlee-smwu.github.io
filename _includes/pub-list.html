@@ -2,7 +2,11 @@
   Renders publications from _data/publications.yml for one group.
   Usage: {% include pub-list.html group="first" %}
 {% endcomment %}
-{% assign pubs = site.data.publications | where: "group", include.group %}
+{% if include.selected %}
+  {% assign pubs = site.data.publications | where: "selected", true %}
+{% else %}
+  {% assign pubs = site.data.publications | where: "group", include.group %}
+{% endif %}
 <ol class="pubs">
 {% for p in pubs %}
   <li class="pub">

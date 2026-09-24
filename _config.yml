@@ -35,7 +35,6 @@ include:
 exclude:
   - "*.sublime-project"
   - markdown_generator
-  - scripts
   - Dockerfile
   - docker-compose.yaml
   - _config_docker.yml
@@ -130,6 +129,7 @@ timezone: Asia/Seoul
 # Plugins
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
   - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap

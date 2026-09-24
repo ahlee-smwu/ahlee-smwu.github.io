@@ -20,12 +20,14 @@
   date: "Nov 2025"
   paper: "Temporal Gradient Consistency (TGC): Temporal Stability Assessment via Gradient Consistency for Video Stability"
   role: second
+  link: /publications/#second-author--domestic-conferences
 
 - title: "Best Paper Award"
-  event: "MITA 2025 (21st Int. Conf. on Multimedia Information Technology and Applications)"
+  event: "MITA 2025"
   date: "Jul 2025"
-  paper: "RMSF-ViT: Randomized Multi-Scale Fusion Vision Transformer"
+  paper: "RMSF-ViT: Randomized Multi-Scale Fusion Vision Transformer (CCIS, Springer)"
   role: second
+  link: /publications/#second-author--international
 
 - title: "Best Paper Award"
   event: "KMMS Spring Conference 2025"

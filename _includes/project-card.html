@@ -1,20 +1,21 @@
 {% comment %}
-  One research-project card. Usage: {% include project-card.html project=p %}
+  One research-project card. Usage: {% include project-card.html project=p %} (optional level="h2")
 {% endcomment %}
 {% assign p = include.project %}
+{% assign h = include.level | default: "h3" %}
 <li class="card">
-  <a class="card__imglink" href="{{ p.url | relative_url }}" aria-label="{{ p.title }}">
+  <a class="card__imglink" href="{{ p.url | relative_url }}" tabindex="-1" aria-hidden="true">
     <img class="card__img" src="{{ p.teaser | relative_url }}" alt="" loading="lazy">
   </a>
   <div class="card__body">
-    <div class="card__meta">{{ p.number }} · {{ p.category }} · {{ p.period }}</div>
-    <h3 class="card__title"><a href="{{ p.url | relative_url }}">{{ p.short_title | default: p.title }}</a></h3>
+    <div class="card__meta"><span>{{ p.number }} · {{ p.category }}</span><span class="card__period">{{ p.period }}</span></div>
+    <{{ h }} class="card__title"><a href="{{ p.url | relative_url }}">{{ p.short_title | default: p.title }}</a></{{ h }}>
     <p class="card__text">{{ p.summary }}</p>
     {% if p.badges %}
     <div class="badges">
       {% for b in p.badges %}<span class="badge badge--{{ b.kind }}">{{ b.text }}</span>{% endfor %}
     </div>
     {% endif %}
-    <div class="card__foot"><a href="{{ p.url | relative_url }}">Details &rarr;</a></div>
+    <div class="card__foot"><a href="{{ p.url | relative_url }}" aria-label="Details: {{ p.short_title | default: p.title }}">Details &rarr;</a></div>
   </div>
 </li>

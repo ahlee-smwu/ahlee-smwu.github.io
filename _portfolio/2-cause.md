@@ -6,12 +6,15 @@ category: "Team Research Project I"
 topic: "Multimodal Empathetic Response Generation"
 period: "2026.01 – 2026.06"
 teaser: /images/cause_results.jpg
+teaser_alt: "Speaker frames next to generated listener reactions for happy, disgust and sad inputs, and a neutral listener without CAUSE"
 teaser_caption: "Listener reactions follow the speaker's emotion — happy → happy, disgust → angry, sad → surprised. Without CAUSE the listener stays neutral."
 summary: "Speaker audio + video + text fused by cross-attention → listener reactions that track the speaker's emotion."
 badges:
   - { text: "Under review · AAAI 2027", kind: review }
   - { text: "First author", kind: first }
 featured: true
+teaser_wide: true
+date: 2026-06-30
 excerpt: "CAUSE generates empathetic listener reactions by cross-attending the speaker's audio, visual and textual cues at the utterance level — emotion-adaptive empathy beyond text-centric models."
 collection: portfolio
 ---
@@ -66,7 +69,7 @@ collection: portfolio
   <li><strong>Without CAUSE</strong> the model collapses to a neutral talking head.</li>
 </ul>
 
-<figure class="fig">
+<figure class="fig fig--wide">
   <img src="/images/cause_compare.jpg" alt="Listener reactions across happy, angry and surprised: baseline without CAUSE, CAUSE, and ground truth" loading="lazy">
   <figcaption>Across <em>happy / angry / surprised</em>, CAUSE (middle row) tracks the ground-truth listener (bottom) more closely than the no-CAUSE baseline (top).</figcaption>
 </figure>

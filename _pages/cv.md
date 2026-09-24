@@ -46,7 +46,7 @@ excerpt: "CV of Ahhyeon Lee — M.S. in IT Engineering (Sookmyung Women's Univer
     <span class="entry__date">Sep 2024 – Present</span>
   </div>
   <ul>
-    <li><strong>RAPID</strong> — data-adaptive GMM prior + step-adaptive noise → 84% fewer steps, 6.3× faster (40 NFE, FID 5.40 on ImageNet-1K)</li>
+    <li><strong>RAPID</strong> — data-adaptive GMM prior + step-adaptive noise → 84% fewer sampling steps, 6.3× faster (FID 5.40 at 40 steps on ImageNet-1K)</li>
     <li><strong>CAUSE</strong> — vision–audio–text cross-attention for utterance-level speaker–listener empathy generation</li>
     <li><strong>GPU Server Team Lead</strong> — full-stack training infrastructure (hardware → BIOS → OS → library); I/O &amp; thermal optimization</li>
   </ul>
@@ -82,10 +82,12 @@ excerpt: "CV of Ahhyeon Lee — M.S. in IT Engineering (Sookmyung Women's Univer
 ## Awards
 
 <ul class="keys">
-  <li><span class="badge badge--award">Best Paper ×3</span> First author — KMMS Spring 2026 · KMMS Autumn 2025 · KMMS Spring 2025</li>
-  <li><span class="badge badge--award">Best Paper ×2</span> Second author — MITA 2025 · KMMS Autumn 2025</li>
+  <li><span class="badge badge--award">Best Paper Award ×3</span> First author — KMMS Spring 2026 · KMMS Autumn 2025 · KMMS Spring 2025</li>
+  <li><span class="badge badge--award">Best Paper Award ×2</span> Second author — MITA 2025 · KMMS Autumn 2025</li>
   <li><span class="badge badge--first">Nominee</span> Outstanding Thesis Award — M.S. thesis, 2026</li>
 </ul>
+
+<p class="muted">KMMS = Korea Multimedia Society (domestic) · MITA = International Conference on Multimedia Information Technology and Applications.</p>
 
 <div class="btn-row btn-row--left">
   <a class="btn-pill" href="/awards/"><i class="fas fa-trophy" aria-hidden="true"></i> Awards &amp; Grants in detail</a>
@@ -115,14 +117,12 @@ excerpt: "CV of Ahhyeon Lee — M.S. in IT Engineering (Sookmyung Women's Univer
     <li><span class="chip">OpenCV</span></li>
     <li><span class="chip">Dlib</span></li>
     <li><span class="chip">CUDA</span></li>
-    <li><span class="chip">Git</span></li>
   </ul>
 </div>
 <div class="chip-group">
   <span class="chip-group__label">Infrastructure</span>
   <ul class="chips">
     <li><span class="chip">GPU server management (team lead)</span></li>
-    <li><span class="chip">Linux</span></li>
   </ul>
 </div>
 

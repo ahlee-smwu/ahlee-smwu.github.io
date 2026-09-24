@@ -6,6 +6,7 @@ category: "Team Research Project II"
 topic: "Multimodal Emotion Recognition and Empathy Modeling"
 period: "2024.09 – 2025.10"
 teaser: /images/team2_results.jpg
+teaser_alt: "Neutral speaker frames next to listener reactions showing happy, worry and furious"
 teaser_caption: "Speaker neutral → listener happy / worry / furious — a listener that reacts, not just a talking head."
 summary: "Vision + audio fused and aligned in dyadic interactions → listener reactions beyond the talking head."
 badges:
@@ -13,6 +14,7 @@ badges:
   - { text: "First author", kind: first }
   - { text: "2× Principal Investigator", kind: pi }
 featured: false
+date: 2025-10-31
 excerpt: "Vision and audio integration with multimodal alignment for cognitive empathy modeling in dyadic speaker–listener interactions. First-author paper at KMMS Autumn 2024; Principal Investigator on two supporting grants."
 collection: portfolio
 ---
@@ -54,7 +56,7 @@ collection: portfolio
   <li><strong>Alignment</strong> with wav2lip · <strong>enhancement</strong> with ESRGAN.</li>
 </ul>
 
-<figure class="fig">
+<figure class="fig fig--wide">
   <img src="/images/team2_method.png" alt="Pipeline: video and audio through ViCo and AnyGPT, aligned with wav2lip and enhanced with ESRGAN" loading="lazy">
   <figcaption>Vision &amp; audio integration (left) and multimodal alignment (right).</figcaption>
 </figure>
