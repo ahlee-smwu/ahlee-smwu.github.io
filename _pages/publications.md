@@ -1,35 +1,39 @@
 ---
-layout: archive
+layout: single
 title: "Publications"
 permalink: /publications/
 author_profile: true
+excerpt: "Publications of Ahhyeon Lee — two international manuscripts under review (Pattern Recognition, AAAI 2027), five first-author conference papers, four second-author papers, five Best Paper Awards."
 ---
 
-<em>Underline</em> = first author. 🏆 = Best Paper Award.
+<div class="pub-legend">
+  <span class="badge badge--first">First author</span>
+  <span class="badge badge--award"><i class="fas fa-trophy" aria-hidden="true"></i> Best Paper Award</span>
+  <span class="badge badge--review">Under review</span>
+  <span><span class="me">A. H. Lee</span> = Ahhyeon Lee &nbsp;·&nbsp; * corresponding author</span>
+</div>
 
-## Under Review / In Preparation
+<ul class="stats">
+  <li class="stat"><span class="stat__num">2</span><span class="stat__label">international manuscripts<br>under review</span></li>
+  <li class="stat"><span class="stat__num">5</span><span class="stat__label">first-author<br>conference papers</span></li>
+  <li class="stat"><span class="stat__num">4</span><span class="stat__label">second-author<br>papers</span></li>
+  <li class="stat"><span class="stat__num">5</span><span class="stat__label">Best Paper<br>Awards</span></li>
+</ul>
 
-- <u>**A. H. Lee**</u> and B. G. Kim*.  
-  **RAPID: Robust Adaptive Prior Integration for Diffusion.**  
-  *Pattern Recognition*, 2026 (under review). [Project page](/portfolio/1-rapid/)
+## Under Review — International
 
-- <u>**A. H. Lee**</u>, Y. J. Cho, and B. G. Kim*.  
-  **Multi-Signal-Based User Emotion Recognition and Cognitive Empathy Modeling** *(CAUSE line).*  
-  *AAAI 2027* (under review). [Project page](/portfolio/2-cause/)
+{% include pub-list.html group="review" %}
 
-## First Author — Conferences
+## First Author — Domestic Conferences
 
-- <u>**A. H. Lee**</u>, H. S. Lee, and B. G. Kim*. **Adaptive Prior Diffusion: Dataset-Aware GMM Prior for High-Fidelity Image Generation.** KMMS Spring Conference, May 2026. 🏆 **Best Paper Award**
-- <u>**A. H. Lee**</u>, Y. J. Cho, and B. G. Kim*. **An Optimized Diffusion Model Based on Adaptive Prior Distribution.** KMMS Autumn Conference, Nov 2025. 🏆 **Best Paper Award**
-- <u>**A. H. Lee**</u> and B. G. Kim*. **Attention Module Minification by Low-Rank Factorization.** KMMS Spring Conference, May 2025. 🏆 **Best Paper Award**
-- <u>**A. H. Lee**</u>, S. Y. Lee, T. K. Park, and B. G. Kim*. **Development of Global Virtual Conferencing (GVC) Service Based on Real-Time Translation.** KMMS Spring Conference, May 2025.
-- <u>**A. H. Lee**</u>, Q. U. A. Aisha, Y. J. Cho, N. R. Choi, S. I. Choi, and B. G. Kim*. **Facial Emotion Recognition-Based Empathic Avatar Generation Technology.** KMMS Autumn Conference, Nov 2024.
+{% include pub-list.html group="first" %}
 
-## Co-Author — International Conferences
+## Second Author — International
 
-- Y. J. Cho, **A. H. Lee**, B. G. Kim*, and J. Platos. **RMSF-ViT: Randomized Multi-Scale Fusion Vision Transformer.** MITA 2025 / CCIS (Springer). 🏆 **Best Paper Award**
+{% include pub-list.html group="second-intl" %}
 
-## Co-Author — Domestic Conferences
+## Second Author — Domestic Conferences
 
-- Q. U. A. Aisha, **A. H. Lee**, and B. G. Kim*. **Temporal Gradient Consistency (TGC): Temporal Stability Assessment via Gradient Consistency for Video Stability.** KMMS Autumn 2025. 🏆 **Best Paper Award**
-- Y. J. Cho, **A. H. Lee**, and B. G. Kim*. **Frequency Separated Feature Conditioning for Diffusion-Based Video Super-Resolution.** KMMS Autumn 2025.
+{% include pub-list.html group="second-domestic" %}
+
+<p class="muted">KMMS = Korea Multimedia Society (domestic) · MITA = International Conference on Multimedia Information Technology and Applications. Full manuscripts of papers under review are available upon request.</p>

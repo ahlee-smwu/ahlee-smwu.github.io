@@ -1,32 +1,73 @@
 ---
-title: "Attention Module Minification by Low-Rank Factorization"
-excerpt: "Low-rank factorization of Q/K/V projections cuts attention FLOPs to 14–25% of the baseline while slightly *improving* accuracy.<br/><img src='/images/attn_teaser.png' style='max-width: 350px; width: 100%;'>"
+title: "Attention Module Minification by Low-rank Factorization"
+short_title: "Transformer Attention Minification"
+number: "04"
+category: "Personal Research"
+topic: "Transformer Attention Minification"
+period: "2024.09 – 2025.05"
+teaser: /images/attn_method.png
+teaser_alt: "Low-rank factorization of the Q, K, V projections: an n by d matrix replaced by n by f and f by d matrices inside multi-head attention"
+teaser_caption: "Each Q/K/V projection (n×d) becomes two thin matrices (n×f, f×d) with f ≪ min(n, d)."
+summary: "Low-rank Q/K/V projections → attention minification of 14–25% vs. baseline and 92.2–94.2% vs. BERT, with accuracy slightly up."
+badges:
+  - { text: "Best Paper Award · KMMS Spring 2025", kind: award }
+  - { text: "First author", kind: first }
+featured: false
+date: 2025-05-31
+excerpt: "Low-rank factorization of the Q, K, V projection matrices in Transformer attention — minification of 14–25% vs. baseline and 92.2–94.2% vs. BERT with slightly higher accuracy. Best Paper Award, KMMS Spring 2025."
 collection: portfolio
 ---
 
-> **Status:** Published, KMMS Spring 2025 (first author, **Best Paper Award**).
+{% include project-header.html %}
 
-## Research Objectives
+## Objectives
 
-- Low-rank factorization of the Q, K, V projection matrices in Transformer attention.
-- Minimize FLOPs without accuracy loss.
+<ul class="keys">
+  <li><strong>Low-rank factorization</strong> of the Q, K, V projection matrices.</li>
+  <li><strong>Fewer FLOPs</strong>, no accuracy loss.</li>
+</ul>
 
 ## Motivation
 
-Transformer attention scales as O(n²) in matmul and its parameter count grows quickly with model width, dominating FLOPs and memory in many architectures. Rather than pruning or distilling, I factorized the Q/K/V projections themselves into low-rank forms — a structural, deploy-friendly change.
+<div class="duo">
+  <div class="panel">
+    <p class="panel__title">Problem</p>
+    <ul>
+      <li>Massive parameters and O(n²) matmul complexity.</li>
+      <li>High computational overhead in Transformers.</li>
+    </ul>
+  </div>
+  <div class="panel">
+    <p class="panel__title">Idea</p>
+    <ul>
+      <li>Structural efficiency instead of pruning or distillation.</li>
+      <li>Keep performance with fewer calculations.</li>
+    </ul>
+  </div>
+</div>
 
-## Method and Experimental Results
+## Method
 
-Each Q, K, V projection **W ∈ ℝ^(n×d)** is replaced by a product of two smaller matrices **W ≈ AB, A ∈ ℝ^(n×f), B ∈ ℝ^(f×d)** with **f ≪ min(n, d)**. Complexity drops from O(nd) to O(nf + fd), and the same rank *f* is used for every attention head to keep the implementation clean.
+<ul class="keys">
+  <li><strong>W ≈ A · B</strong> — W ∈ ℝ<sup>n×d</sup>, A ∈ ℝ<sup>n×f</sup>, B ∈ ℝ<sup>f×d</sup>, f ≪ min(n, d).</li>
+  <li><strong>Complexity</strong> — n·d → n·f + f·d.</li>
+  <li>Same rank <em>f</em> for every attention head — a clean, deploy-friendly change.</li>
+</ul>
 
-- Attention FLOPs reduced to **14–25%** of the baseline.
-- **92.2–94.2%** parameter savings versus BERT.
-- Accuracy **+0.004–0.008** over the baseline — performance *slightly improved*, not merely preserved.
+## Results
 
-<p style="text-align: center;">
-  <img src="/images/attn_teaser.png" alt="Low-rank factorization method and results" style="max-width: 900px; width: 100%;">
-</p>
+<ul class="stats">
+  <li class="stat"><span class="stat__num">14–25%</span><span class="stat__label">attention minification<br>vs. baseline</span></li>
+  <li class="stat"><span class="stat__num">92.2–94.2%</span><span class="stat__label">attention minification<br>vs. BERT</span></li>
+  <li class="stat"><span class="stat__num stat__num--sm">+0.004 to +0.008</span><span class="stat__label">accuracy vs. baseline<br>(absolute)</span></li>
+</ul>
+
+<ul class="keys">
+  <li>Performance <strong>slightly improved</strong>, not merely preserved.</li>
+</ul>
 
 ## Achievements
 
-- **Best Paper Award**, KMMS Spring 2025 (first author).
+<ul class="keys">
+  <li><span class="badge badge--award">Best Paper Award</span> KMMS Spring 2025 (first author).</li>
+</ul>

@@ -3,7 +3,7 @@ locale                   : "en-GB"
 title                    : "Ahhyeon Lee"
 title_separator          : "-"
 name                     : &name "Ahhyeon Lee"
-description              : &description "M.S. researcher in efficient diffusion models and multimodal affective computing."
+description              : &description "AI researcher in efficient diffusion generative models and multimodal empathy. M.S. in IT Engineering, Sookmyung Women's University. Ph.D. applicant for 2027."
 url                      : "https://ahlee-smwu.github.io"
 baseurl                  : ""
 repository               : "ahlee-smwu/ahlee-smwu.github.io"
@@ -12,7 +12,7 @@ repository               : "ahlee-smwu/ahlee-smwu.github.io"
 author:
   name             : "Ahhyeon Lee"
   avatar           : "profile.png"     # place a photo at images/profile.jpg (optional; comment out if none)
-  bio              : "M.S. in IT Engineering, Sookmyung Women's University, Efficient diffusion & multimodal empathy."
+  bio              : "Efficient diffusion · Multimodal empathy · Ph.D. applicant 2027"
   location         : "Seoul, Republic of Korea"
   employer         : "Intelligent Vision Processing Lab (IVPL)"
   employer_url     : "http://ivpl.sm.ac.kr/"
@@ -21,8 +21,12 @@ author:
   email            : "ah.lee@ivpl.sm.ac.kr"
   researchgate     :
   github           : "ahlee-smwu"
-  linkedin         : "https://www.linkedin.com/in/ahhyeon-lee-5b8a50397/"
+  linkedin         : "ahhyeon-lee-5b8a50397"
   orcid            :
+
+# Feed
+atom_feed:
+  hide: true
 
 # Reading Files
 include:
@@ -30,6 +34,10 @@ include:
   - _pages
 exclude:
   - "*.sublime-project"
+  - markdown_generator
+  - Dockerfile
+  - docker-compose.yaml
+  - _config_docker.yml
   - "*.sublime-workspace"
   - vendor
   - .asset-cache
@@ -121,6 +129,7 @@ timezone: Asia/Seoul
 # Plugins
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
   - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap

@@ -1,46 +1,85 @@
 ---
-title: "CAUSE: Cross-modal Attention for Utterance-level Speaker–Listener Empathy"
-excerpt: "Multimodal (text/audio/vision) empathetic response generation, driven by cross-attention between speaker and listener at the utterance level.<br/><img src='/images/cause_teaser.png' style='max-width: 500px; width: 100%;'>"
+title: "CAUSE: Sequential Empathetic Listener Reaction Generation from Response Speech"
+short_title: "CAUSE — Multimodal Empathetic Response Generation"
+number: "02"
+category: "Team Research Project I"
+topic: "Multimodal Empathetic Response Generation"
+period: "2026.01 – 2026.06"
+teaser: /images/cause_results.jpg
+teaser_alt: "Speaker frames next to generated listener reactions for happy, disgust and sad inputs, and a neutral listener without CAUSE"
+teaser_caption: "Listener reactions follow the speaker's emotion — happy → happy, disgust → angry, sad → surprised. Without CAUSE the listener stays neutral."
+summary: "Speaker audio + video + text fused by cross-attention → listener reactions that track the speaker's emotion."
+badges:
+  - { text: "Under review · AAAI 2027", kind: review }
+  - { text: "First author", kind: first }
+featured: true
+teaser_wide: true
+date: 2026-06-30
+excerpt: "CAUSE generates empathetic listener reactions by cross-attending the speaker's audio, visual and textual cues at the utterance level — emotion-adaptive empathy beyond text-centric models."
 collection: portfolio
 ---
 
-> **Status:** Submitted to **AAAI 2027** (under double-blind review).  
-> Method summary shown below. **Full manuscript available upon request.**
+{% include project-header.html %}
 
-## Research Objectives
+## Objectives
 
-- Multimodal (text + audio + video) empathetic response generation.
-- Cross-attention that binds the **speaker's emotional cues** to the **listener's response cues** at the utterance level.
-- Emotion-driven, adaptive empathy — beyond text-centric LLM approaches.
+<ul class="keys">
+  <li><strong>Multimodal</strong> (text / audio / video) empathetic response generation.</li>
+  <li><strong>Cross-attention</strong> binding the speaker's emotional cues to the listener's reaction cues.</li>
+  <li><strong>Emotion-driven</strong>, adaptive empathy — beyond text-centric LLM approaches.</li>
+</ul>
 
 ## Motivation
 
-Existing empathetic-response research is dominated by text-based LLMs that ignore non-verbal cues, or by "talking head" generators that reflect facial motion without emotional grounding. Human empathy depends on the speaker's tone and expression, so the listener's reaction should vary with those signals. This calls for a model that fuses the speaker's audio, visual, and textual signals *and* conditions the listener's generation on that fused representation.
+<div class="duo">
+  <div class="panel">
+    <p class="panel__title">Problem</p>
+    <ul>
+      <li>Empathy research is dominated by text-centric models.</li>
+      <li>Non-verbal cues are ignored.</li>
+    </ul>
+  </div>
+  <div class="panel">
+    <p class="panel__title">Why multimodal</p>
+    <ul>
+      <li>Empathy varies with facial and vocal tone.</li>
+      <li>The listener needs the speaker's <strong>fused</strong> multimodal signal.</li>
+    </ul>
+  </div>
+</div>
 
-## Method (high-level)
+## Method
 
-An utterance-level Listener Bank uses cross-attention over the speaker's audio, textual, and visual features to produce pose and expression coefficients for the listener. These coefficients drive a face generator to synthesize a video response whose affect is consistent with the speaker's emotional state.
+<ul class="keys">
+  <li><strong>Speaker Bank</strong> (frozen) — encodes the speaker's video and text.</li>
+  <li><strong>Listener Bank</strong> (trained) — cross-attention over audio features → pose &amp; expression coefficients.</li>
+  <li><strong>Pose VAE + Expression VAE + MLPs</strong> → motion coefficients.</li>
+  <li><strong>Frozen face generator</strong> → the listener video, sequentially aligned with the speaker.</li>
+</ul>
 
-## Experimental Results
+<figure class="fig">
+  <img src="/images/cause_method.png" alt="CAUSE architecture: Speaker Bank, Listener Bank with cross-attention, Pose VAE, Expression VAE, MLP heads and a frozen generator" loading="lazy">
+  <figcaption>CAUSE overview — the Listener Bank cross-attends speaker cues to produce pose and expression coefficients for the generator.</figcaption>
+</figure>
 
-**Emotion-adaptive empathy.** Speaker → Listener pairs demonstrate that CAUSE varies the listener's response with the speaker's emotion (e.g. *sad → surprised*, *disgust → angry*, *happy → happy*), whereas the model without CAUSE collapses to a neutral talking head.
+## Results
 
-<p style="text-align: center;">
-  <img src="/images/cause_teaser.png" alt="CAUSE emotion-adaptive examples" style="max-width: 900px; width: 100%;">
-</p>
+<ul class="keys">
+  <li><strong>Emotion-adaptive.</strong> Speaker <em>happy</em> → listener <em>happy</em> · <em>disgust</em> → <em>angry</em> · <em>sad</em> → <em>surprised</em>.</li>
+  <li><strong>Without CAUSE</strong> the model collapses to a neutral talking head.</li>
+</ul>
 
-**Comparison with baseline and ground truth.** Across *happy / angry / surprised*, CAUSE (middle row) tracks the ground-truth listener reactions (bottom) more closely than the no-CAUSE baseline (top).
-
-<p style="text-align: center;">
-  <img src="/images/cause_results.jpg" alt="CAUSE comparison with ground truth" style="max-width: 900px; width: 100%;">
-</p>
-
-## Related Work in the Same Line
-
-- **REACT 2026 Challenge (ACM Multimedia)** — participating; contributed a 70K-sample multimodal empathy dataset and a diffusion-based empathetic-reaction model that injects multimodal cues as noise conditions (LLM-free).
-- **Multi-Signal-Based User Emotion Recognition and Cognitive Empathy Modeling** — KMMS Autumn 2024 (first author). See [project page](/portfolio/3-team-research-ii/).
+<figure class="fig fig--wide">
+  <img src="/images/cause_compare.jpg" alt="Listener reactions across happy, angry and surprised: baseline without CAUSE, CAUSE, and ground truth" loading="lazy">
+  <figcaption>Across <em>happy / angry / surprised</em>, CAUSE (middle row) tracks the ground-truth listener (bottom) more closely than the no-CAUSE baseline (top).</figcaption>
+</figure>
 
 ## Achievements
 
-- Submitted to AAAI 2027 (under review).
-- Two NRF / Sookmyung SW Principal Investigator grants supporting this line.
+<ul class="keys">
+  <li><span class="badge badge--review">Under review</span> Submitted to <em>AAAI 2027</em> (first author).</li>
+  <li><span class="badge">Related project</span> NRF — <em>Probabilistic Empathy Response Generation via Multimodal Fusion</em> (2026.03 – 2026.05, participant).</li>
+  <li><span class="badge">Builds on</span> <a href="/portfolio/3-team-research-ii/">Multi-Signal-Based User Emotion Recognition and Cognitive Empathy Modeling</a> (KMMS Autumn 2024).</li>
+</ul>
+
+<p class="muted">Full manuscript available upon request.</p>

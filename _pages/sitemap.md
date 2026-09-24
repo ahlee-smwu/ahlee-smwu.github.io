@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: single
 title: "Sitemap"
 permalink: /sitemap/
 author_profile: true
@@ -7,31 +7,31 @@ author_profile: true
 
 {% include base_path %}
 
-A list of all the posts and pages found on the site. For you robots out there, there is an [XML version]({{ base_path }}/sitemap.xml) available for digesting as well.
+<p class="muted">All pages on this site. An <a href="{{ base_path }}/sitemap.xml">XML version</a> is available for robots.</p>
 
-<h2>Pages</h2>
-{% for post in site.pages %}
-  {% include archive-single.html %}
-{% endfor %}
+## Pages
 
-<h2>Posts</h2>
-{% for post in site.posts %}
-  {% include archive-single.html %}
-{% endfor %}
+<ul class="keys keys--tight">
+  <li><a href="{{ base_path }}/">Home</a></li>
+  <li><a href="{{ base_path }}/portfolio/">Research</a></li>
+  <li><a href="{{ base_path }}/publications/">Publications</a></li>
+  <li><a href="{{ base_path }}/awards/">Awards &amp; Grants</a></li>
+  <li><a href="{{ base_path }}/cv/">Curriculum Vitae</a></li>
+</ul>
 
-{% capture written_label %}'None'{% endcapture %}
+## Research Projects
 
-{% for collection in site.collections %}
-{% unless collection.output == false or collection.label == "posts" %}
-  {% capture label %}{{ collection.label }}{% endcapture %}
-  {% if label != written_label %}
-  <h2>{{ label }}</h2>
-  {% capture written_label %}{{ label }}{% endcapture %}
-  {% endif %}
-{% endunless %}
-{% for post in collection.docs %}
-  {% unless collection.output == false or collection.label == "posts" %}
-  {% include archive-single.html %}
-  {% endunless %}
+<ul class="keys keys--tight">
+{% assign projects = site.portfolio | sort: "number" %}
+{% for p in projects %}
+  <li><a href="{{ base_path }}{{ p.url }}">{{ p.number }} · {{ p.title }}</a></li>
 {% endfor %}
-{% endfor %}
+</ul>
+
+## Documents
+
+<ul class="keys keys--tight">
+  <li><a href="{{ base_path }}/files/cv.pdf">CV (PDF)</a></li>
+  <li><a href="{{ base_path }}/files/full_portfolio.pdf">Portfolio (PDF)</a></li>
+  <li><a href="{{ base_path }}/files/research_achievement.pdf">Research Achievements (PDF)</a></li>
+</ul>

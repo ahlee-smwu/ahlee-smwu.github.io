@@ -1,0 +1,24 @@
+{% comment %}
+  Header block for a research-project page (reads the page's front matter).
+  Usage at the top of a _portfolio/*.md file: {% include project-header.html %}
+{% endcomment %}
+<div class="proj">
+  <div class="proj__meta">
+    <span class="proj__num">{{ page.number }}</span>
+    <span>{{ page.category }}</span>
+    <span class="nowrap"><i class="far fa-calendar" aria-hidden="true"></i> {{ page.period }}</span>
+  </div>
+  {% if page.topic %}<p class="proj__topic"><strong>Topic</strong> · {{ page.topic }}</p>{% endif %}
+  {% if page.badges %}
+  <div class="badges">
+    {% for b in page.badges %}<span class="badge badge--{{ b.kind }}">{{ b.text }}</span>{% endfor %}
+  </div>
+  {% endif %}
+  {% if page.summary %}<p class="proj__summary">{{ page.summary }}</p>{% endif %}
+  {% if page.teaser %}
+  <figure class="fig fig--narrow{% if page.teaser_wide %} fig--wide{% endif %}">
+    <img src="{{ page.teaser | relative_url }}" alt="{{ page.teaser_alt | default: page.title }}">
+    {% if page.teaser_caption %}<figcaption>{{ page.teaser_caption }}</figcaption>{% endif %}
+  </figure>
+  {% endif %}
+</div>

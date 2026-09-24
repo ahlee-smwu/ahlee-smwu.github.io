@@ -1,0 +1,28 @@
+{% comment %}
+  Renders publications from _data/publications.yml for one group.
+  Usage: {% include pub-list.html group="first" %}
+{% endcomment %}
+{% if include.selected %}
+  {% assign pubs = site.data.publications | where: "selected", true %}
+{% else %}
+  {% assign pubs = site.data.publications | where: "group", include.group %}
+{% endif %}
+<ol class="pubs">
+{% for p in pubs %}
+  <li class="pub">
+    <div class="badges">
+      {% if p.role == "first" %}<span class="badge badge--first">First author</span>{% endif %}
+      {% if p.award %}<span class="badge badge--award"><i class="fas fa-trophy" aria-hidden="true"></i> {{ p.award }}</span>{% endif %}
+      {% if p.status %}<span class="badge badge--review">{{ p.status }}</span>{% endif %}
+    </div>
+    <p class="pub__title">{{ p.title }}</p>
+    <p class="pub__authors">{{ p.authors | replace: "A. H. Lee", "<span class='me'>A. H. Lee</span>" }}</p>
+    <p class="pub__venue">{{ p.venue }}{% if p.date %} · {{ p.date }}{% endif %}</p>
+    {% if p.links %}
+    <p class="pub__links">
+      {% for l in p.links %}<a class="btn-mini" href="{{ l.url | relative_url }}">{{ l.label }}</a>{% endfor %}
+    </p>
+    {% endif %}
+  </li>
+{% endfor %}
+</ol>

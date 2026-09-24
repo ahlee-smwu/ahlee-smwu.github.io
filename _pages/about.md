@@ -1,40 +1,108 @@
 ---
 permalink: /
 title: "Ahhyeon Lee"
-excerpt: "M.S. researcher in efficient diffusion & multimodal empathy."
-author_profile: true
+layout: home
+author_profile: false
+excerpt: "Ahhyeon Lee — AI researcher in efficient diffusion generative models and multimodal empathy. M.S. in IT Engineering, Sookmyung Women's University. Ph.D. applicant for 2027."
 redirect_from:
   - /about/
   - /about.html
 ---
 
-## About Me
-* 🎓 **M.S. in IT Engineering**, Sookmyung Women's University (Aug 2026)
-* 🔬 **Researcher** at Intelligent Vision Processing Lab ([IVPL](http://ivpl.sm.ac.kr/)), advised by Prof. Byung-Gyu Kim
-* 🎯 **Ph.D. Applicant** for 2027 positions
+<div class="hero">
+  <img class="hero__photo" src="/images/profile.png" alt="Portrait of Ahhyeon Lee">
+  <div class="hero__body">
+    <p class="hero__kicker">이아현 · publishes as Ah-Hyeon Lee (A. H. Lee)</p>
+    <h1 class="hero__name">Ahhyeon Lee</h1>
+    <p class="hero__role">M.S. in IT Engineering · Sookmyung Women's University · <a href="http://ivpl.sm.ac.kr/">IVPL</a></p>
+    <ul class="hashtags">
+      <li># AI Scientist</li>
+      <li># Efficient Vision Generative Model</li>
+      <li># Multimodal Empathy Model</li>
+    </ul>
+    <div class="badges">
+      <span class="badge badge--accent">Ph.D. applicant · 2027</span>
+      <span class="badge badge--first">Nominated · Outstanding Thesis Award</span>
+    </div>
+    <div class="btn-row">
+      <a class="btn-pill btn-pill--primary" href="/files/cv.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i> CV</a>
+      <a class="btn-pill" href="/files/full_portfolio.pdf"><i class="fas fa-images" aria-hidden="true"></i> Portfolio</a>
+      <a class="btn-pill" href="mailto:ah.lee@ivpl.sm.ac.kr"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
+      <a class="btn-pill" href="https://github.com/ahlee-smwu"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+      <a class="btn-pill" href="https://www.linkedin.com/in/ahhyeon-lee-5b8a50397/"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+    </div>
+  </div>
+</div>
 
-My research sits at the intersection of two directions:
+## At a Glance
 
-- **Efficient diffusion generative models** — designing data- and step-adaptive priors so that diffusion models can reach the target distribution in far fewer sampling steps, without extra networks or distillation.
-- **Multimodal affective computing** — fusing vision, audio, and text via cross-attention to generate empathetic responses that are grounded in the speaker's emotional state.
+<ul class="keys">
+  <li>🎓 <strong>M.S. in IT Engineering</strong>, Sookmyung Women's University (Aug 2026) · GPA 4.15 / 4.3 · <strong>Nominated for Outstanding Thesis Award</strong></li>
+  <li>🔬 <strong>Graduate Researcher</strong>, Intelligent Vision Processing Lab (<a href="http://ivpl.sm.ac.kr/">IVPL</a>) · Advisor: Prof. Byung-Gyu Kim</li>
+  <li>🎯 <strong>Seeking Ph.D. positions</strong> starting 2027 — efficient generative models · multimodal affective AI</li>
+</ul>
 
-I care most about **industrially deployable AI**: models that stay accurate while cutting compute cost, and that eventually connect vision intelligence to the physical world.
+<ul class="stats">
+  <li class="stat"><span class="stat__num">84%</span><span class="stat__label">fewer sampling steps<br>(RAPID)</span></li>
+  <li class="stat"><span class="stat__num">6.3×</span><span class="stat__label">faster generation<br>(RAPID)</span></li>
+  <li class="stat"><span class="stat__num">5</span><span class="stat__label">Best Paper Awards<br>(3 as first author)</span></li>
+  <li class="stat"><span class="stat__num">2</span><span class="stat__label">grants as<br>Principal Investigator</span></li>
+</ul>
+
+## Research Interests
+
+<ul class="keys">
+  <li><strong>Efficient diffusion</strong> — data- &amp; step-adaptive priors → few-step sampling. No extra networks, no distillation.</li>
+  <li><strong>Multimodal empathy</strong> — vision + audio + text cross-attention → listener responses grounded in the speaker's emotion.</li>
+  <li><strong>Deployable AI</strong> — keep accuracy, cut compute: few-step diffusion · low-rank attention · GPU training infrastructure.</li>
+</ul>
+
+<ul class="chips">
+  <li><span class="chip">Diffusion Models</span></li>
+  <li><span class="chip">Flow Matching</span></li>
+  <li><span class="chip">Few-Step Sampling</span></li>
+  <li><span class="chip">Adaptive Priors</span></li>
+  <li><span class="chip">Multimodal Fusion</span></li>
+  <li><span class="chip">Affective Computing</span></li>
+  <li><span class="chip">Efficient Attention</span></li>
+  <li><span class="chip">GPU Infrastructure</span></li>
+</ul>
 
 ## Featured Research
 
-**RAPID: Robust Adaptive Prior Integration for Diffusion** — > *Pattern Recognition (2026) (under review)*
-**84% fewer sampling steps** and **6.3× faster generation** without any additional networks. [Project page](/portfolio/1-rapid/)
+{% assign featured = site.portfolio | where: "featured", true | sort: "number" %}
+<ul class="cards">
+{% for p in featured %}{% include project-card.html project=p %}{% endfor %}
+</ul>
 
-**CAUSE: Cross-modal Attention for Utterance-level Speaker–Listener Empathy** — *AAAI 2027 (under review)*
-A multimodal empathetic response generator that fuses the speaker's audio, visual, and textual cues via cross-attention. [Project page](/portfolio/2-cause/)
+<div class="btn-row btn-row--left">
+  <a class="btn-pill" href="/portfolio/"><i class="fas fa-flask" aria-hidden="true"></i> All research projects</a>
+</div>
+
+## Selected Publications
+
+{% include pub-list.html selected=true %}
+
+<div class="btn-row btn-row--left">
+  <a class="btn-pill" href="/publications/"><i class="fas fa-book" aria-hidden="true"></i> All publications</a>
+</div>
 
 ## News
 
-- **May 2026** — *Adaptive Prior Diffusion* (RAPID predecessor) received the **Best Paper Award** at KMMS Spring Conference.
-- **Nov 2025** — *An Optimized Diffusion Model Based on Adaptive Prior Distribution* received the **Best Paper Award** at KMMS Autumn Conference.
+{% include news-list.html limit=6 %}
 
 ## Contact
 
-📧 [ah.lee@ivpl.sm.ac.kr](mailto:ah.lee@ivpl.sm.ac.kr) | [ahlee.sep@gmail.com](ahlee.sep@gmail.com) &nbsp;|&nbsp;  📱 +82 10-9109-6271  &nbsp;|&nbsp;  💻 [github.com/ahlee-smwu](https://github.com/ahlee-smwu)
+<ul class="contact">
+  <li><i class="fas fa-envelope" aria-hidden="true"></i><span><a href="mailto:ah.lee@ivpl.sm.ac.kr">ah.lee@ivpl.sm.ac.kr</a> · <a href="mailto:ahlee.sep@gmail.com">ahlee.sep@gmail.com</a></span></li>
+  <li><i class="fas fa-phone" aria-hidden="true"></i><span>+82 10-9109-6271</span></li>
+  <li><i class="fas fa-location-dot" aria-hidden="true"></i><span>IVPL, Sookmyung Women's University, Seoul, Republic of Korea</span></li>
+  <li><i class="fab fa-github" aria-hidden="true"></i><span><a href="https://github.com/ahlee-smwu">github.com/ahlee-smwu</a></span></li>
+  <li><i class="fab fa-linkedin" aria-hidden="true"></i><span><a href="https://www.linkedin.com/in/ahhyeon-lee-5b8a50397/">linkedin.com/in/ahhyeon-lee-5b8a50397</a></span></li>
+</ul>
 
-📄 [Download CV (PDF)](/files/cv.pdf) &nbsp; · &nbsp; 📊 [Download Full Portfolio (PDF)](/files/full_portfolio.pdf)
+<div class="btn-row btn-row--left">
+  <a class="btn-pill" href="/files/cv.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i> CV (PDF)</a>
+  <a class="btn-pill" href="/files/full_portfolio.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i> Portfolio (PDF)</a>
+  <a class="btn-pill" href="/files/research_achievement.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i> Research Achievements (PDF)</a>
+</div>

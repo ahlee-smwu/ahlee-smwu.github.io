@@ -1,0 +1,38 @@
+# Funded research projects, Principal Investigator first, then newest first.
+# role_kind: pi | member
+
+- period: "2025.04 – 2025.10"
+  title: "Vision-based Emotion Recognition & Empathy Modeling"
+  funder: "WISET · Korea Foundation for Women in Science, Engineering and Technology"
+  role: "Principal Investigator"
+  role_kind: pi
+
+- period: "2024.09 – 2024.11"
+  title: "Visual Signal Analysis and Empathy Modeling for User Emotion Recognition"
+  funder: "IITP · Institute of Information & Communications Technology Planning & Evaluation (Sookmyung SW-Centered University)"
+  role: "Principal Investigator"
+  role_kind: pi
+
+- period: "2026.03 – 2026.05"
+  title: "Probabilistic Empathy Response Generation via Multimodal Fusion"
+  funder: "NRF · National Research Foundation of Korea"
+  role: "Participant"
+  role_kind: member
+
+- period: "2024.09 – 2026.08"
+  title: "Empathetic AI Women Engineering Education"
+  funder: "MOE · Ministry of Education — BK21 FOUR (Brain Korea 21, Phase 4)"
+  role: "Participant"
+  role_kind: member
+
+- period: "2024.09 – 2024.12"
+  title: "AV Coding & LF Media Technology for Tera-media"
+  funder: "ETRI · Electronics and Telecommunications Research Institute"
+  role: "Participant"
+  role_kind: member
+
+- period: "2024.03 – 2024.08"
+  title: "Generative AI-based Empathetic Avatar Generation"
+  funder: "IITP · Institute of Information & Communications Technology Planning & Evaluation"
+  role: "Participant"
+  role_kind: member
