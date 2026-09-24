@@ -34,10 +34,6 @@ include:
   - _pages
 exclude:
   - "*.sublime-project"
-  - talkmap
-  - talkmap.ipynb
-  - talkmap_out.ipynb
-  - talkmap.py
   - markdown_generator
   - scripts
   - Dockerfile
