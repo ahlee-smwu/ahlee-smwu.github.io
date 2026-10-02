@@ -1,0 +1,28 @@
+{
+  "name": "file-tabs",
+  "version": "0.1.0",
+  "description": "파일을 사이드 패널의 탭으로 열고 고정(핀)하며, Claude가 수정한 파일은 자동으로 탭에 추가합니다. /view 로 원격 기기에서도 파일을 볼 수 있습니다.",
+  "author": {
+    "name": "ahlee-smwu"
+  },
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "autoOpen": {
+      "type": "string",
+      "title": "자동 탭 추가",
+      "description": "edits: Claude가 수정한 파일만 / edits-and-reads: 읽은 파일도 / off: 끄기",
+      "default": "edits",
+      "options": [
+        "edits",
+        "edits-and-reads",
+        "off"
+      ]
+    },
+    "maxAutoTabs": {
+      "type": "number",
+      "title": "자동 탭 최대 개수",
+      "description": "자동으로 열린(고정 안 한) 탭이 이 수를 넘으면 가장 오래된 것부터 닫습니다.",
+      "default": 8
+    }
+  }
+}
